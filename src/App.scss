@@ -1,0 +1,64 @@
+/* @import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap'); */
+@import url('https://use.typekit.net/fwk7rye.css');
+
+.App {
+  background-image: url(./images/dark-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow: scroll;
+  z-index: -100000000;
+  filter: brightness(50%);
+}
+
+.wrapper {
+  min-height: 300vh;
+  color: #A7A5A5;
+  padding: 3rem 6rem;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: adobe-caslon-pro, serif;
+  h1 {
+    font-size: 6rem;
+    line-height: 0.9;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+  
+    background: -webkit-linear-gradient(to right, #A7A5A5, rgb(29, 29, 29));
+    background: linear-gradient(to right, #A7A5A5, rgb(29, 29, 29));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+  }
+  .left {
+    border: 1px solid red;
+    width: 33.333vw;
+    position: absolute;
+    align-self: flex-start;
+  }
+  .middle {
+    border: 1px solid orange;
+    width: 66.666%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    img {
+      display: flex;
+      border: 1px solid pink;
+    }
+  }
+  .right {
+    border: 1px solid yellow;
+    width: 33.333vw;
+    position: absolute;
+    align-self: flex-end;
+  }
+}
